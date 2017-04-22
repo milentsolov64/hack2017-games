@@ -1,4 +1,6 @@
 <b>Hack Vratsa 2017</b>
+</br>
+<b>#кодаправиш</b>
 <ol>
   <li>Timer</li>
   <li>Keypad</li>
