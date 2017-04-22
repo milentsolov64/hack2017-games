@@ -1,1 +1,1 @@
-Hack Vratsa 2017
+<b>Hack Vratsa 2017</b>
