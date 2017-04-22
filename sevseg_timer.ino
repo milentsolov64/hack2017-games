@@ -30,10 +30,6 @@ void loop() {
       if (m == 0)
       {
         timer = 0;
-        sevseg2.setBrightness(0);
-        sevseg.setBrightness(0);
-        sevseg2.setNumber(6, 2);
-        sevseg.setNumber(s, 2);
       }
       else
       {
