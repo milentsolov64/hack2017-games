@@ -1,6 +1,6 @@
 #include "SevSeg.h"
 SevSeg sevseg;
-SevSeg sevseg2; //Instantiate a seven segment controller object
+SevSeg sevseg2;
 
 void setup() {
   byte numDigits = 2;
@@ -19,10 +19,8 @@ void loop() {
   static unsigned long timer = millis();
   static int s = 10;
   static int m = 0;
-    sevseg.setNumber(s, 1);
+  sevseg.setNumber(s, 1);
   sevseg2.setNumber(m, 2);
-
-  //sevseg.setNumber(s,1);
   while (millis() >= timer) {
 
     s--;
@@ -32,7 +30,6 @@ void loop() {
       if (m == 0)
       {
         timer = 0;
-        Serial.println("HERE!");
         sevseg2.setBrightness(0);
         sevseg.setBrightness(0);
         sevseg2.setNumber(6, 2);
@@ -43,7 +40,6 @@ void loop() {
         m = m - 1;
         s = 59;
       }
-      // Must run repeatedly
     }
 
   }
