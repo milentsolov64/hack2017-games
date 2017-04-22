@@ -1,1 +1,1 @@
-<b>Hack Vratsa 2017</b>
+<b font-size:18px>Hack Vratsa 2017</b>
