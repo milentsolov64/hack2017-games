@@ -3,7 +3,7 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-// Initialization///////////
+// Inicializa///////////
 LiquidCrystal_I2C lcd(0x27, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE);
 
 
@@ -113,7 +113,7 @@ int intervalMorse = 500;
 unsigned long previousMillisMorse = 0;
 int count = 0;
 
-////////WIRES////////
+////////JICI////////
 
 bool jica = 0;              // easy integration
 const int Wire1Pin = 7;     // the number of the Wire pin
@@ -169,7 +169,7 @@ void setup() {
   pinMode(onoff3, INPUT);
   pinMode(onoff4, INPUT);
 
-  //////////////////WIRES////////////////
+  //////////////////JICI////////////////
   pinMode(Wire1Pin, INPUT);
   pinMode(Wire2Pin, INPUT);
   pinMode(Wire3Pin, INPUT);
@@ -435,7 +435,7 @@ void loop() {
     }
 
 
-    ////////////////WIRES//////////////////
+    ////////////////JICI//////////////////
 
     // read the state of the Wire value:
     Wire_State1 = digitalRead(Wire1Pin);
